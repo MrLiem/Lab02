@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bai4-SDH Web Page</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="main-head">
+      <div class="banner">
+        <img src="./img/banner.jpg" alt="banner" />
+      </div>
+      <nav class="main-nav">
+        <!-- // Hamburger icon for small screen -->
+        <div class="hamburger">
+          <img src="./img/square.svg" alt="hamburger" />
+        </div>
+        <!-- Search section -->
+        <div class="search flex">
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Tìm kiếm ..."
+          />
+          <img src="./img/searchbutton.png" />
+        </div>
+        <!-- Menu section for large screen-->
+        <ul class="all-menu">
+          <li class="menu active"><span>TRANG CHỦ</span></li>
+          <li class="flex menu">
+            <span>TUYỂN SINH</span>
+            <img src="./img/down-arrow.svg" alt="down arrow" />
+            <ul class="sub-menu-1">
+              <li class="sub-menu-1-child">
+                <a href="#">Thông tin tuyển sinh</a>
+              </li>
+              <li class="sub-menu-1-child"><a href="#">Hồ sơ tuyển sinh</a></li>
+              <li class="sub-menu-1-child"><a href="#">Đề cương ôn tập</a></li>
+            </ul>
+          </li>
+          <li class="flex menu">
+            <span>ĐÀO TẠO THẠC SĨ</span
+            ><img src="./img/down-arrow.svg" alt="down arrow" />
+            <ul class="sub-menu-1">
+              <li class="sub-menu-1-child active2">
+                <a href="#">Ngành Khoa học Máy tính</a>
+                <img src="./img/right-arrow.svg" alt="down arrow" />
+                <ul class="sub-menu-2">
+                  <li class="sub-menu-2-child">Chương trình đào tạo</li>
+                  <li class="sub-menu-2-child">Học vụ</li>
+                </ul>
+              </li>
+              <li class="sub-menu-1-child">
+                <a href="#">Ngành Công nghệ Thông tin</a>
+                <img src="./img/right-arrow.svg" alt="down arrow" />
+                <ul class="sub-menu-2">
+                  <li class="sub-menu-2-child">Chương trình đào tạo</li>
+                  <li class="sub-menu-2-child">Học vụ</li>
+                </ul>
+              </li>
+              <li class="sub-menu-1-child">
+                <a href="#">Ngành Hệ thống Thông tin</a>
+                <img src="./img/right-arrow.svg" alt="down arrow" />
+                <ul class="sub-menu-2">
+                  <li class="sub-menu-2-child">Chương trình đào tạo</li>
+                  <li class="sub-menu-2-child">Học vụ</li>
+                </ul>
+              </li>
+              <li class="sub-menu-1-child">
+                <a href="#">Ngành An toàn thông tin</a>
+                <img src="./img/right-arrow.svg" alt="down arrow" />
+                <ul class="sub-menu-2">
+                  <li class="sub-menu-2-child">Chương trình đào tạo</li>
+                  <li class="sub-menu-2-child">Học vụ</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="flex menu">
+            <span>ĐÀO TẠO TIẾN SĨ</span
+            ><img src="./img/down-arrow.svg" alt="down arrow" />
+            <ul class="sub-menu-1">
+              <li class="sub-menu-1-child">
+                <a href="#">Khoa học Máy tính</a>
+                <img src="./img/right-arrow.svg" alt="down arrow" />
+                <ul class="sub-menu-2">
+                  <li class="sub-menu-2-child">Chương trình đào tạo</li>
+                  <li class="sub-menu-2-child">Học vụ</li>
+                </ul>
+              </li>
+              <li class="sub-menu-1-child">
+                <a href="#">Ngành Công nghệ Thông tin</a>
+                <img src="./img/right-arrow.svg" alt="down arrow" />
+                <ul class="sub-menu-2">
+                  <li class="sub-menu-2-child">Chương trình đào tạo</li>
+                  <li class="sub-menu-2-child">Học vụ</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="flex menu">
+            <span>KẾ HOẠCH ĐÀO TẠO</span>
+          </li>
+          <li class="flex menu">
+            <span>HỌC VIÊN</span>
+          </li>
+          <li class="flex menu">
+            <span>LIÊN HỆ</span>
+          </li>
+        </ul>
+        <!-- Menu section for small screen -->
+        <ul class="all-menu-small">
+          <li>
+            <div class="menu-small">TRANG CHỦ</div>
+          </li>
+          <li>
+            <div class="menu-small active4">
+              TUYỂN SINH<img src="./img/down-arrow.svg" />
+            </div>
+            <ul class="sub-menu-small">
+              <li class="sub-menu-small-1-child">
+                <p>Thông tin tuyển sinh</p>
+              </li>
+              <li class="sub-menu-small-1-child"><p>Hồ sơ tuyển sinh</p></li>
+              <li class="sub-menu-small-1-child"><p>Đề cương ôn tập</p></li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-small">
+              ĐÀO TẠO THẠC SĨ<img src="./img/down-arrow.svg" />
+            </div>
+            <ul class="sub-menu-small">
+              <li class="sub-menu-small-1-child">
+                <p>Ngành Khoa học Máy tính</p>
+                <ul class="sub-menu-small-2">
+                  <li>Chương trình đào tạo</li>
+                  <li>Học vụ</li>
+                </ul>
+              </li>
+              <li class="sub-menu-small-1-child">
+                <p>Ngành Công nghệ thông tin</p>
+                <ul class="sub-menu-small-2">
+                  <li>Chương trình đào tạo</li>
+                  <li>Học vụ</li>
+                </ul>
+              </li>
+              <li class="sub-menu-small-1-child">
+                <p>Ngành Hệ thống thông tin</p>
+                <ul class="sub-menu-small-2">
+                  <li>Chương trình đào tạo</li>
+                  <li>Học vụ</li>
+                </ul>
+              </li>
+              <li class="sub-menu-small-1-child">
+                <p>Ngành An toàn thông tin</p>
+                <ul class="sub-menu-small-2">
+                  <li>Chương trình đào tạo</li>
+                  <li>Học vụ</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-small">
+              ĐÀO TẠO TIẾN SĨ<img src="./img/down-arrow.svg" />
+            </div>
+            <ul class="sub-menu-small">
+              <li class="sub-menu-small-1-child">
+                <p>Ngành Khoa học Máy tính</p>
+                <ul class="sub-menu-small-2">
+                  <li>Chương trình đào tạo</li>
+                  <li>Học vụ</li>
+                </ul>
+              </li>
+              <li class="sub-menu-small-1-child">
+                <p>Ngành Công nghệ thông tin</p>
+                <ul class="sub-menu-small-2">
+                  <li>Chương trình đào tạo</li>
+                  <li>Học vụ</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="menu-small">KẾ HOẠCH ĐÀO TẠO</div>
+          </li>
+          <li>
+            <div class="menu-small">HỌC VIÊN</div>
+          </li>
+          <li>
+            <div class="menu-small">LIÊN HỆ</div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main-body -->
+    <main class="main-body">
+      <!--  Left bar section -->
+      <div class="left-bar">
+        <!-- logIn section -->
+        <form id="form" method="GET" autocomplete="off" class="logIn section">
+          <p class="title">ĐĂNG NHẬP</p>
+          <div>
+            <label for="user"
+              >Tên truy cập <span style="color: red">*</span></label
+            >
+            <input id="user" type="text" name="user" />
+            <div>Dùng tài khoản chứng thực</div>
+            <label for="password"
+              >Mật khẩu <span style="color: red">*</span></label
+            >
+            <input type="password" id="password" name="password" />
+            <div>Mật khẩu chứng thực</div>
+            <button type="submit">Đăng nhập</button>
+          </div>
+        </form>
+        <!-- Dao tao sau dai hoc section -->
+        <div class="after-uni section">
+          <p class="title">ĐÀO TẠO SAU ĐẠI HỌC</p>
+          <div class="content">
+            <div class="after-uni-item">
+              <img src="./img/bullet.jpg" />Giới thiệu
+              <ul class="after-uni-item-child active3">
+                <li>
+                  <img src="./img/right-chevron.svg" />Đào tạo Sau Đại Học
+                </li>
+                <li>
+                  <img src="./img/right-chevron.svg" />Chức năng và nhiệm vụ
+                </li>
+                <li><img src="./img/right-chevron.svg" />Nhân sự</li>
+              </ul>
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/bullet.jpg" />Biểu mẫu
+              <ul class="after-uni-item-child">
+                <li><img src="./img/right-chevron.svg" />Đào tạo Thạc Sĩ</li>
+                <li><img src="./img/right-chevron.svg" />Đào tạo Tiến Sĩ</li>
+              </ul>
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/bullet.jpg" />Học bổng
+              <ul class="after-uni-item-child">
+                <li><img src="./img/right-chevron.svg" />Thạc Sĩ</li>
+                <li><img src="./img/right-chevron.svg" />Tiến Sĩ</li>
+              </ul>
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/row-11.gif" class="small-img" />Luận án tiến sĩ
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/bullet.jpg" />Luận án cao học
+              <ul class="after-uni-item-child">
+                <li><img src="./img/right-chevron.svg" />Ngành KHMT</li>
+                <li><img src="./img/right-chevron.svg" />Ngành CNTT</li>
+                <li><img src="./img/right-chevron.svg" />Ngành ATTT</li>
+              </ul>
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/row-11.gif" class="small-img" />Tra cứu văn bằng
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/bullet.jpg" />Quy chế - Quy định
+              <ul class="after-uni-item-child">
+                <li><img src="./img/right-chevron.svg" />Đào tạo Thạc Sĩ</li>
+                <li><img src="./img/right-chevron.svg" />Đào tạo Tiến Sĩ</li>
+                <li><img src="./img/right-chevron.svg" />Tuyển sinh</li>
+              </ul>
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/row-11.gif" class="small-img" />Đào tạo Thạc Sĩ
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/row-11.gif" class="small-img" />Website môn học
+              (SĐH)
+            </div>
+            <div class="after-uni-item">
+              <img src="./img/row-11.gif" class="small-img" />Hướng nghiên cứu
+              của NCS
+            </div>
+          </div>
+        </div>
+        <!-- website lien ket section -->
+        <div class="web-link section">
+          <p class="title">WEBSITE LIÊN KẾT</p>
+          <div class="content">
+            <div class="row">
+              <img src="./img/bullet2.gif" /><a href="#">Website Trường</a>
+            </div>
+            <div class="row">
+              <img src="./img/bullet2.gif" /><a href="#">Forum Trường</a>
+            </div>
+            <div class="row">
+              <img src="./img/bullet2.gif" /><a href="#"
+                >Website môn học (SĐH)</a
+              >
+            </div>
+            <div class="row">
+              <img src="./img/bullet2.gif" /><a href="#">Thư viện</a>
+            </div>
+            <div class="row">
+              <img src="./img/bullet2.gif" /><a href="#">Trung tâm Ngoại ngữ</a>
+            </div>
+            <div class="row">
+              <img src="./img/bullet2.gif" /><a href="#">Đề án sách</a>
+            </div>
+            <div class="row">
+              <img src="./img/bullet2.gif" /><a href="#">Hình ảnh</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Middle bar -->
+      <div class="middle-bar">
+        <div class="nofitication">
+          <p>TUYỂN SINH</p>
+          <hr />
+          <div class="nofi-body">
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >THÔNG BÁO TUYỂN SINH CHƯƠNG TRÌNH ĐÀO TẠO TRÌNH ĐỘ THẠC SĨ
+                  ĐỢT 2 NĂM 2020</a
+                >- (20-07-2020)
+                <img src="./img/new.gif" alt="new" class="gif" />
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo V/v gia hạn thời gian nộp hồ sơ dự thi Tuyển sinh
+                  Sau đại học đợt 2 năm 2020</a
+                >- (20-07-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo chiêu sinh lớp ôn tập MÔN TIẾNG ANH tuyển sinh
+                  chương trình đào tạo thạc sĩ đợt 2/2020</a
+                >- (03-09-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo V/v gia hạn thời gian nộp hồ sơ dự thi Tuyển sinh
+                  Sau đại học đợt 2 năm 2020</a
+                >- (20-07-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo chiêu sinh lớp ôn tập MÔN TIẾNG ANH tuyển sinh
+                  chương trình đào tạo thạc sĩ đợt 2/2020</a
+                >- (03-09-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo V/v gia hạn thời gian nộp hồ sơ dự thi Tuyển sinh
+                  Sau đại học đợt 2 năm 2020</a
+                >- (20-07-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo chiêu sinh lớp ôn tập MÔN TIẾNG ANH tuyển sinh
+                  chương trình đào tạo thạc sĩ đợt 2/2020</a
+                >- (03-09-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo V/v gia hạn thời gian nộp hồ sơ dự thi Tuyển sinh
+                  Sau đại học đợt 2 năm 2020</a
+                >- (20-07-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo chiêu sinh lớp ôn tập MÔN TIẾNG ANH tuyển sinh
+                  chương trình đào tạo thạc sĩ đợt 2/2020</a
+                >- (03-09-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo V/v gia hạn thời gian nộp hồ sơ dự thi Tuyển sinh
+                  Sau đại học đợt 2 năm 2020</a
+                >- (20-07-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo chiêu sinh lớp ôn tập MÔN TIẾNG ANH tuyển sinh
+                  chương trình đào tạo thạc sĩ đợt 2/2020</a
+                >- (03-09-2020)
+              </div>
+            </div>
+
+            <a href="#">Xem thêm >></a>
+          </div>
+        </div>
+        <div class="nofitication">
+          <p>THỜI KHÓA BIỂU & ĐIỂM THI</p>
+          <hr />
+          <div class="nofi-body">
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#">Thông báo điểm thi môn An toàn bảo mật thông tin</a
+                >- (07-10-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo chuyển phòng lớp học anh văn chiều thứ 7 ngày
+                  3/10/2020</a
+                >- (30-09-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo chuyển phòng lớp học anh văn chiều thứ 7 ngày
+                  3/10/2020</a
+                >- (30-09-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo chuyển phòng lớp học anh văn chiều thứ 7 ngày
+                  3/10/2020</a
+                >- (30-09-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo nộp bài thu hoạch môn Thuật toán và phương pháp
+                  giải quyết vấn đề</a
+                >- (23-09-2020)
+              </div>
+            </div>
+            <a href="#">Xem thêm >></a>
+          </div>
+        </div>
+        <div class="nofitication">
+          <p>THÔNG BÁO NGHỈ, BÙ</p>
+          <hr />
+          <div class="nofi-body">
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#">Thông báo nghỉ môn Toán ngày 01/11/2020</a>-
+                (25-10-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo nghỉ môn Nhận diện thị giác và ứng dụng ngày 12
+                  tháng 10 năm 2020</a
+                >- (12-10-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo nghỉ môn Nhận diện thị giác và ứng dụng ngày 12
+                  tháng 10 năm 2020</a
+                >- (12-10-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo nghỉ môn Nhận diện thị giác và ứng dụng ngày 12
+                  tháng 10 năm 2020</a
+                >- (12-10-2020)
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo nghỉ môn Hoạch định nguồn lực doanh nghiệp ngày 10
+                  tháng 10 năm 2020</a
+                >- (05-10-2020)
+              </div>
+            </div>
+            <a href="#">Xem thêm >></a>
+          </div>
+        </div>
+        <div class="nofitication">
+          <p>HỌC BỔNG</p>
+          <hr />
+          <div class="nofi-body">
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo đổi phòng học HT2 Máy học (CS114.K21.1) ngày
+                  19/06/2020</a
+                >- 16/10/2020 -13:04
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo đổi phòng học Thứ 6, ngày 21/12/2018 ;MA006.J18;
+                  SS002.J13; SS003.J13</a
+                >- 16/10/2020 -13:04
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo đổi phòng học Thứ 6, ngày 21/12/2018 ;MA006.J18;
+                  SS002.J13; SS003.J13</a
+                >- 16/10/2020 -13:04
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Thông báo đổi phòng học Thứ 6, ngày 21/12/2018 ;MA006.J18;
+                  SS002.J13; SS003.J13</a
+                >- 16/10/2020 -13:04
+              </div>
+            </div>
+            <div>
+              <img src="./img/right-chevron.svg" />
+              <div>
+                <a href="#"
+                  >Về việc triển khai học bổng Sau đại học ĐHQG-HCM năm 2020</a
+                >- (09-06-2020)
+              </div>
+            </div>
+            <a href="#">Xem thêm >></a>
+          </div>
+          <div class=""></div>
+        </div>
+      </div>
+      <!-- Right-bar -->
+      <div class="right-bar">
+        <!-- Thông báo NCS section -->
+        <div class="inform-ncs section">
+          <p class="title">THÔNG BÁO NCS</p>
+          <div class="content">
+            <div class="nofi-body">
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <a href="#">Xem thêm >></a>
+            </div>
+          </div>
+        </div>
+        <!-- Thông báo hvch section -->
+        <div class="inform-hvch section">
+          <p class="title">THÔNG BÁO LUẬN VĂN HVCH</p>
+          <div class="content">
+            <div class="nofi-body">
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo kết quả thi ĐGNL tiếng Anh kỳ thi ngày
+                    18/10/2020</a
+                  >- (28-10-2020)
+                </div>
+              </div>
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo buổi báo cáo seminar lần 2 của NCS Đặng Kiên
+                    Cường</a
+                  >- (26-10-2020)
+                </div>
+              </div>
+              <a href="#">Xem thêm >></a>
+            </div>
+          </div>
+        </div>
+        <!-- Thông báo lv -->
+        <div class="inform-lv section">
+          <p class="title">ĐỀ TÀI LUẬN VĂN</p>
+          <div class="content">
+            <div class="nofi-body">
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo danh sách tham khảo các đề tài luận văn thạc sĩ
+                    của HVCH, hướng nghiên cứu của GVHD</a
+                  >-(06-09-2020)
+                  <img src="./img/new.gif" alt="new" class="gif" />
+                </div>
+              </div>
+              <a href="#">Xem thêm >></a>
+            </div>
+          </div>
+        </div>
+        <!-- Thông báo học vụ -->
+        <div class="inform-hv section">
+          <p class="title">HỌC VỤ</p>
+          <div class="content">
+            <div class="nofi-body">
+              <div>
+                <img src="./img/right-chevron.svg" />
+                <div>
+                  <a href="#"
+                    >Thông báo danh sách tham khảo các đề tài luận văn thạc sĩ
+                    của HVCH, hướng nghiên cứu của GVHD</a
+                  >-(06-09-2020)
+                </div>
+              </div>
+              <a href="#">Xem thêm >></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div>PHÒNG ĐTSĐH & KHCN</div>
+      <p>Khu phố 6, P.Linh Trung, Q.Thủ Đức, TP.Hồ Chí Minh.</p>
+      <p>
+        Điện thoại: <strong>(08) 372 52002, Ext: 110</strong> Fax:
+        <strong>(08) 372 52148</strong>
+      </p>
+      <p>
+        Email: <strong><a href="#">dtsdh@uit.edu.vn</a></strong>
+      </p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="./validate.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
